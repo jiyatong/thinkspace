@@ -140,7 +140,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/thinkspace/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -180,6 +180,110 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://jiyatong.github.io/thinkspace/2025/06/14/dev-env-setup/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/thinkspace/images/avatar.jpg">
+      <meta itemprop="name" content="Yatong Ji">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ThinkSpace">
+      <meta itemprop="description" content="欢迎来到我的博客">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | ThinkSpace">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/thinkspace/2025/06/14/dev-env-setup/" class="post-title-link" itemprop="url">Mac前端开发环境配置</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2025-06-14 12:00:00" itemprop="dateCreated datePublished" datetime="2025-06-14T12:00:00+08:00">2025-06-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-06-15 15:50:32" itemprop="dateModified" datetime="2025-06-15T15:50:32+08:00">2025-06-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/thinkspace/categories/%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index"><span itemprop="name">工具</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="如何配置MAC前端开发环境"><a href="#如何配置MAC前端开发环境" class="headerlink" title="如何配置MAC前端开发环境"></a>如何配置MAC前端开发环境</h1><p>本文记录如何配置 macOS 前端开发环境</p>
+<hr>
+<h2 id="安装-Nvm"><a href="#安装-Nvm" class="headerlink" title="安装 Nvm"></a>安装 Nvm</h2><p>1.通过brew安装 Nvm：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install nvm</span><br></pre></td></tr></table></figure>
+
+<p>2.创建 Nvm 工作目录：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> ~/.nvm</span><br></pre></td></tr></table></figure>
+
+<p>3.配置 .zshrc：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># nvm config</span></span><br><span class="line"><span class="built_in">export</span> NVM_DIR=<span class="string">&quot;<span class="variable">$HOME</span>/.nvm&quot;</span></span><br><span class="line"><span class="comment"># This loads nvm</span></span><br><span class="line">[ -s <span class="string">&quot;/opt/homebrew/opt/nvm/nvm.sh&quot;</span> ] &amp;&amp; \. <span class="string">&quot;/opt/homebrew/opt/nvm/nvm.sh&quot;</span></span><br><span class="line"><span class="comment"># This loads nvm bash_completion</span></span><br><span class="line">[ -s <span class="string">&quot;/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm&quot;</span> ] &amp;&amp; \. <span class="string">&quot;/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="安装-bun"><a href="#安装-bun" class="headerlink" title="安装 bun"></a>安装 bun</h2><p>1.通过curl安装 bun：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL https://bun.sh/install | bash</span><br></pre></td></tr></table></figure>
+
+<p>2.配置 .zshrc：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># bun config</span></span><br><span class="line"><span class="built_in">export</span> BUN_INSTALL=<span class="string">&quot;<span class="variable">$HOME</span>/.bun&quot;</span></span><br><span class="line"><span class="built_in">export</span> PATH=<span class="string">&quot;<span class="variable">$BUN_INSTALL</span>/bin:<span class="variable">$PATH</span>&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>3.卸载 bun：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rm</span> -rf ~/.bun</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://jiyatong.github.io/thinkspace/2025/06/12/terminal-setup/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -208,9 +312,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2025-06-12 09:00:00 / 修改时间：09:02:52" itemprop="dateCreated datePublished" datetime="2025-06-12T09:00:00+08:00">2025-06-12</time>
+      <time title="创建时间：2025-06-12 09:00:00" itemprop="dateCreated datePublished" datetime="2025-06-12T09:00:00+08:00">2025-06-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-06-15 15:50:32" itemprop="dateModified" datetime="2025-06-15T15:50:32+08:00">2025-06-15</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -347,7 +457,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-06-12 09:02:52" itemprop="dateModified" datetime="2025-06-12T09:02:52+08:00">2025-06-12</time>
+      <time title="修改时间：2025-06-15 15:50:32" itemprop="dateModified" datetime="2025-06-15T15:50:32+08:00">2025-06-15</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
