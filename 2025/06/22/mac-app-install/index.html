@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/thinkspace/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/thinkspace/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/thinkspace/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/thinkspace/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/thinkspace/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha256-dABdfBfUoC8vJUBOwGVdm8L9qlMWaHTIfXt+7GnZCIo=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"jiyatong.github.io","root":"/thinkspace/","images":"/thinkspace/images","scheme":"Pisces","darkmode":false,"version":"8.23.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/thinkspace/js/config.js" defer></script>
+
+    <meta name="description" content="Mac 常用应用安装指南本文记录在 macOS 系统上安装常用应用程序的详细步骤，包括开发工具、办公软件和实用工具。  🛠️ 开发工具1. Homebrew - 包管理器Homebrew 是 macOS 上最流行的包管理器，建议首先安装： 1&#x2F;bin&#x2F;bash -c &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Homebrew&#x2F;ins">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mac 常用应用安装指南">
+<meta property="og:url" content="https://jiyatong.github.io/thinkspace/2025/06/22/mac-app-install/index.html">
+<meta property="og:site_name" content="ThinkSpace">
+<meta property="og:description" content="Mac 常用应用安装指南本文记录在 macOS 系统上安装常用应用程序的详细步骤，包括开发工具、办公软件和实用工具。  🛠️ 开发工具1. Homebrew - 包管理器Homebrew 是 macOS 上最流行的包管理器，建议首先安装： 1&#x2F;bin&#x2F;bash -c &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Homebrew&#x2F;ins">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-06-22T13:00:00.000Z">
+<meta property="article:modified_time" content="2025-06-22T13:03:47.149Z">
+<meta property="article:author" content="Yatong Ji">
+<meta property="article:tag" content="macOS">
+<meta property="article:tag" content="应用安装">
+<meta property="article:tag" content="开发工具">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://jiyatong.github.io/thinkspace/2025/06/22/mac-app-install/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://jiyatong.github.io/thinkspace/2025/06/22/mac-app-install/","path":"2025/06/22/mac-app-install/","title":"Mac 常用应用安装指南"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Mac 常用应用安装指南 | ThinkSpace</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/thinkspace/js/utils.js" defer></script><script src="/thinkspace/js/motion.js" defer></script><script src="/thinkspace/js/sidebar.js" defer></script><script src="/thinkspace/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/thinkspace/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/thinkspace/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">ThinkSpace</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">写代码，写生活</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/thinkspace/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/thinkspace/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Mac-%E5%B8%B8%E7%94%A8%E5%BA%94%E7%94%A8%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97"><span class="nav-number">1.</span> <span class="nav-text">Mac 常用应用安装指南</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%9B%A0%EF%B8%8F-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7"><span class="nav-number">1.1.</span> <span class="nav-text">🛠️ 开发工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Homebrew-%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8"><span class="nav-number">1.1.1.</span> <span class="nav-text">1. Homebrew - 包管理器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%93%84-%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6"><span class="nav-number">1.2.</span> <span class="nav-text">📄 办公软件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Microsoft-Office-%E6%89%B9%E9%87%8F%E8%AE%B8%E5%8F%AF%E7%89%88%E6%9C%AC"><span class="nav-number">1.2.1.</span> <span class="nav-text">1. Microsoft Office 批量许可版本</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%9B%A0%EF%B8%8F-%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7"><span class="nav-number">1.3.</span> <span class="nav-text">🛠️ 实用工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E7%B3%BB%E7%BB%9F%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7"><span class="nav-number">1.3.1.</span> <span class="nav-text">1. 系统增强工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#AppCleaner-%E5%BA%94%E7%94%A8%E6%B8%85%E7%90%86"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">AppCleaner - 应用清理</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%93%9A-%E7%9B%B8%E5%85%B3%E8%B5%84%E6%BA%90"><span class="nav-number">1.4.</span> <span class="nav-text">📚 相关资源</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Yatong Ji"
+      src="/thinkspace/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Yatong Ji</p>
+  <div class="site-description" itemprop="description">欢迎来到我的博客</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/thinkspace/archives/">
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/jiaytong" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;jiaytong" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://jiyatong.github.io/thinkspace/2025/06/22/mac-app-install/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/thinkspace/images/avatar.jpg">
+      <meta itemprop="name" content="Yatong Ji">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ThinkSpace">
+      <meta itemprop="description" content="欢迎来到我的博客">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Mac 常用应用安装指南 | ThinkSpace">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Mac 常用应用安装指南
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2025-06-22 21:00:00 / 修改时间：21:03:47" itemprop="dateCreated datePublished" datetime="2025-06-22T21:00:00+08:00">2025-06-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/thinkspace/categories/%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index"><span itemprop="name">工具</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="Mac-常用应用安装指南"><a href="#Mac-常用应用安装指南" class="headerlink" title="Mac 常用应用安装指南"></a>Mac 常用应用安装指南</h1><p>本文记录在 macOS 系统上安装常用应用程序的详细步骤，包括开发工具、办公软件和实用工具。</p>
+<hr>
+<h2 id="🛠️-开发工具"><a href="#🛠️-开发工具" class="headerlink" title="🛠️ 开发工具"></a>🛠️ 开发工具</h2><h3 id="1-Homebrew-包管理器"><a href="#1-Homebrew-包管理器" class="headerlink" title="1. Homebrew - 包管理器"></a>1. Homebrew - 包管理器</h3><p>Homebrew 是 macOS 上最流行的包管理器，建议首先安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/bin/bash -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>安装完成后配置环境变量：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&#x27;eval &quot;$(/opt/homebrew/bin/brew shellenv)&quot;&#x27;</span> &gt;&gt; ~/.zprofile</span><br><span class="line"><span class="built_in">eval</span> <span class="string">&quot;<span class="subst">$(/opt/homebrew/bin/brew shellenv)</span>&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="📄-办公软件"><a href="#📄-办公软件" class="headerlink" title="📄 办公软件"></a>📄 办公软件</h2><h3 id="1-Microsoft-Office-批量许可版本"><a href="#1-Microsoft-Office-批量许可版本" class="headerlink" title="1. Microsoft Office 批量许可版本"></a>1. Microsoft Office 批量许可版本</h3><blockquote>
+<p>⚠️ <strong>注意</strong>：此方法仅供学习和测试使用，商业用途请购买正版授权。</p>
+</blockquote>
+<blockquote>
+<p>具体参考：<a target="_blank" rel="noopener" href="https://github.com/alsyundawy/Microsoft-Office-For-MacOS">https://github.com/alsyundawy/Microsoft-Office-For-MacOS</a></p>
+</blockquote>
+<ol>
+<li><p><strong>下载 Office 安装包</strong></p>
+<ul>
+<li>访问：<a target="_blank" rel="noopener" href="https://go.microsoft.com/fwlink/?linkid=525133">https://go.microsoft.com/fwlink/?linkid=525133</a></li>
+<li>下载 Microsoft Office LTSC 2024 for Mac</li>
+</ul>
+</li>
+<li><p><strong>安装 Office 应用</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 下载完成后双击安装包进行安装</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>激活工具</strong></p>
+<ul>
+<li>下载地址：<a target="_blank" rel="noopener" href="https://github.com/alsyundawy/Microsoft-Office-For-MacOS/blob/master/DATA/Microsoft_Office_LTSC_2024_VL_Serializer.pkg">https://github.com/alsyundawy/Microsoft-Office-For-MacOS/blob/master/DATA/Microsoft_Office_LTSC_2024_VL_Serializer.pkg</a></li>
+<li>运行激活工具完成激活</li>
+</ul>
+</li>
+<li><p><strong>许可证管理</strong></p>
+<ul>
+<li>如需删除许可证：<a target="_blank" rel="noopener" href="https://go.microsoft.com/fwlink/?linkid=849815">https://go.microsoft.com/fwlink/?linkid=849815</a></li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="🛠️-实用工具"><a href="#🛠️-实用工具" class="headerlink" title="🛠️ 实用工具"></a>🛠️ 实用工具</h2><h3 id="1-系统增强工具"><a href="#1-系统增强工具" class="headerlink" title="1. 系统增强工具"></a>1. 系统增强工具</h3><h4 id="AppCleaner-应用清理"><a href="#AppCleaner-应用清理" class="headerlink" title="AppCleaner - 应用清理"></a>AppCleaner - 应用清理</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install --cask appcleaner</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="📚-相关资源"><a href="#📚-相关资源" class="headerlink" title="📚 相关资源"></a>📚 相关资源</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://brew.sh/">Homebrew 官方文档</a></li>
+<li><a href="">Microsoft Office for Mac 官方支持</a></li>
+</ul>
+<hr>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/thinkspace/tags/macOS/" rel="tag"># macOS</a>
+              <a href="/thinkspace/tags/%E5%BA%94%E7%94%A8%E5%AE%89%E8%A3%85/" rel="tag"># 应用安装</a>
+              <a href="/thinkspace/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" rel="tag"># 开发工具</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/thinkspace/2025/06/14/mac-dev-env-setup/" rel="prev" title="Mac前端开发环境配置">
+                  <i class="fa fa-angle-left"></i> Mac前端开发环境配置
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Yatong Ji</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

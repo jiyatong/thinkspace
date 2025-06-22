@@ -140,7 +140,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/thinkspace/archives/">
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -149,7 +149,7 @@
         <span class="site-state-item-name">分类</span>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">标签</span>
       </div>
   </nav>
@@ -180,7 +180,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://jiyatong.github.io/thinkspace/2025/06/14/dev-env-setup/">
+    <link itemprop="mainEntityOfPage" href="https://jiyatong.github.io/thinkspace/2025/06/22/mac-app-install/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/thinkspace/images/avatar.jpg">
@@ -198,7 +198,130 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/thinkspace/2025/06/14/dev-env-setup/" class="post-title-link" itemprop="url">Mac前端开发环境配置</a>
+          <a href="/thinkspace/2025/06/22/mac-app-install/" class="post-title-link" itemprop="url">Mac 常用应用安装指南</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2025-06-22 21:00:00 / 修改时间：21:03:47" itemprop="dateCreated datePublished" datetime="2025-06-22T21:00:00+08:00">2025-06-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/thinkspace/categories/%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index"><span itemprop="name">工具</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="Mac-常用应用安装指南"><a href="#Mac-常用应用安装指南" class="headerlink" title="Mac 常用应用安装指南"></a>Mac 常用应用安装指南</h1><p>本文记录在 macOS 系统上安装常用应用程序的详细步骤，包括开发工具、办公软件和实用工具。</p>
+<hr>
+<h2 id="🛠️-开发工具"><a href="#🛠️-开发工具" class="headerlink" title="🛠️ 开发工具"></a>🛠️ 开发工具</h2><h3 id="1-Homebrew-包管理器"><a href="#1-Homebrew-包管理器" class="headerlink" title="1. Homebrew - 包管理器"></a>1. Homebrew - 包管理器</h3><p>Homebrew 是 macOS 上最流行的包管理器，建议首先安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/bin/bash -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>安装完成后配置环境变量：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&#x27;eval &quot;$(/opt/homebrew/bin/brew shellenv)&quot;&#x27;</span> &gt;&gt; ~/.zprofile</span><br><span class="line"><span class="built_in">eval</span> <span class="string">&quot;<span class="subst">$(/opt/homebrew/bin/brew shellenv)</span>&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="📄-办公软件"><a href="#📄-办公软件" class="headerlink" title="📄 办公软件"></a>📄 办公软件</h2><h3 id="1-Microsoft-Office-批量许可版本"><a href="#1-Microsoft-Office-批量许可版本" class="headerlink" title="1. Microsoft Office 批量许可版本"></a>1. Microsoft Office 批量许可版本</h3><blockquote>
+<p>⚠️ <strong>注意</strong>：此方法仅供学习和测试使用，商业用途请购买正版授权。</p>
+</blockquote>
+<blockquote>
+<p>具体参考：<a target="_blank" rel="noopener" href="https://github.com/alsyundawy/Microsoft-Office-For-MacOS">https://github.com/alsyundawy/Microsoft-Office-For-MacOS</a></p>
+</blockquote>
+<ol>
+<li><p><strong>下载 Office 安装包</strong></p>
+<ul>
+<li>访问：<a target="_blank" rel="noopener" href="https://go.microsoft.com/fwlink/?linkid=525133">https://go.microsoft.com/fwlink/?linkid=525133</a></li>
+<li>下载 Microsoft Office LTSC 2024 for Mac</li>
+</ul>
+</li>
+<li><p><strong>安装 Office 应用</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 下载完成后双击安装包进行安装</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>激活工具</strong></p>
+<ul>
+<li>下载地址：<a target="_blank" rel="noopener" href="https://github.com/alsyundawy/Microsoft-Office-For-MacOS/blob/master/DATA/Microsoft_Office_LTSC_2024_VL_Serializer.pkg">https://github.com/alsyundawy/Microsoft-Office-For-MacOS/blob/master/DATA/Microsoft_Office_LTSC_2024_VL_Serializer.pkg</a></li>
+<li>运行激活工具完成激活</li>
+</ul>
+</li>
+<li><p><strong>许可证管理</strong></p>
+<ul>
+<li>如需删除许可证：<a target="_blank" rel="noopener" href="https://go.microsoft.com/fwlink/?linkid=849815">https://go.microsoft.com/fwlink/?linkid=849815</a></li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="🛠️-实用工具"><a href="#🛠️-实用工具" class="headerlink" title="🛠️ 实用工具"></a>🛠️ 实用工具</h2><h3 id="1-系统增强工具"><a href="#1-系统增强工具" class="headerlink" title="1. 系统增强工具"></a>1. 系统增强工具</h3><h4 id="AppCleaner-应用清理"><a href="#AppCleaner-应用清理" class="headerlink" title="AppCleaner - 应用清理"></a>AppCleaner - 应用清理</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install --cask appcleaner</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="📚-相关资源"><a href="#📚-相关资源" class="headerlink" title="📚 相关资源"></a>📚 相关资源</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://brew.sh/">Homebrew 官方文档</a></li>
+<li><a href="">Microsoft Office for Mac 官方支持</a></li>
+</ul>
+<hr>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://jiyatong.github.io/thinkspace/2025/06/14/mac-dev-env-setup/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/thinkspace/images/avatar.jpg">
+      <meta itemprop="name" content="Yatong Ji">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ThinkSpace">
+      <meta itemprop="description" content="欢迎来到我的博客">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | ThinkSpace">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/thinkspace/2025/06/14/mac-dev-env-setup/" class="post-title-link" itemprop="url">Mac前端开发环境配置</a>
         </h2>
 
         <div class="post-meta-container">
@@ -216,7 +339,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-06-15 15:50:32" itemprop="dateModified" datetime="2025-06-15T15:50:32+08:00">2025-06-15</time>
+      <time title="修改时间：2025-06-22 21:03:47" itemprop="dateModified" datetime="2025-06-22T21:03:47+08:00">2025-06-22</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -284,7 +407,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://jiyatong.github.io/thinkspace/2025/06/12/terminal-setup/">
+    <link itemprop="mainEntityOfPage" href="https://jiyatong.github.io/thinkspace/2025/06/12/mac-terminal-setup/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/thinkspace/images/avatar.jpg">
@@ -302,7 +425,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/thinkspace/2025/06/12/terminal-setup/" class="post-title-link" itemprop="url">Mac终端配置</a>
+          <a href="/thinkspace/2025/06/12/mac-terminal-setup/" class="post-title-link" itemprop="url">Mac终端配置</a>
         </h2>
 
         <div class="post-meta-container">
@@ -320,7 +443,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-06-15 15:50:32" itemprop="dateModified" datetime="2025-06-15T15:50:32+08:00">2025-06-15</time>
+      <time title="修改时间：2025-06-22 21:03:47" itemprop="dateModified" datetime="2025-06-22T21:03:47+08:00">2025-06-22</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -421,7 +544,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://jiyatong.github.io/thinkspace/2025/06/11/my-first-blog/">
+    <link itemprop="mainEntityOfPage" href="https://jiyatong.github.io/thinkspace/2025/06/11/hexo-next-blog/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/thinkspace/images/avatar.jpg">
@@ -439,7 +562,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/thinkspace/2025/06/11/my-first-blog/" class="post-title-link" itemprop="url">使用 Hexo + NexT 搭建个人博客</a>
+          <a href="/thinkspace/2025/06/11/hexo-next-blog/" class="post-title-link" itemprop="url">使用 Hexo + NexT 搭建个人博客</a>
         </h2>
 
         <div class="post-meta-container">
@@ -457,7 +580,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-06-15 15:50:32" itemprop="dateModified" datetime="2025-06-15T15:50:32+08:00">2025-06-15</time>
+      <time title="修改时间：2025-06-22 21:03:47" itemprop="dateModified" datetime="2025-06-22T21:03:47+08:00">2025-06-22</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
